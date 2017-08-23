@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevinmui.blank.MainActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <EditText
+            android:id="@+id/gpaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="GPA"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="261dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/sleepText"
+            android:layout_alignStart="@+id/sleepText" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="198dp"
+            android:layout_marginBottom="73dp"
+            android:layout_above="@+id/gpaText"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/sleepText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Hours Slept Per Day"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="304dp"
+            android:layout_marginBottom="138dp"
+            android:layout_above="@+id/calcButton"
+            android:layout_alignRight="@+id/calcButton"
+            android:layout_alignEnd="@+id/calcButton" />
+
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="216dp"
+            android:layout_height="48dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Calculate"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="391dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/slothTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Are You a Sloth?"
+            android:textSize="36sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
