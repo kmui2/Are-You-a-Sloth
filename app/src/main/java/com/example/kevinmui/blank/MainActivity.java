@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 float gpa = Float.parseFloat(gpaText.getText().toString());
                 float sleep = Float.parseFloat(sleepText.getText().toString());
-                float score = ((6*(4-gpa)+sleep)/48)*100;
+                float score = (float) (1/( 1 + Math.pow(Math.E,(-1*((((9*(4-gpa)+sleep)/36)*10)-5)))))*100;
                 scoreTextView.setText(Float.toString(score)+"/100 points");
                 gpaText.setText("");
                 sleepText.setText("");
